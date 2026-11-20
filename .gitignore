@@ -1,0 +1,5 @@
+.vercel
+assets/cc0-sources/
+qa/screenshots/
+**/__pycache__/
+*.pyc

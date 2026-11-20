@@ -1,0 +1,282 @@
+{
+  "stage": "Stage A - Mathematical & Route Geometry Proof",
+  "status": "PASS",
+  "failure_count": 0,
+  "failures": [],
+  "parity": {
+    "js_landmarks": 10,
+    "js_streets": 4,
+    "blender_spec_checked": true
+  },
+  "aabb_and_corridors": {
+    "pair_count": 45,
+    "min_building_clearance_m": 0.5,
+    "min_clearance_pair": [
+      "restaurant",
+      "bookstore"
+    ],
+    "tightest_5_pairs": [
+      {
+        "a": "post-office",
+        "b": "restaurant",
+        "clearance_m": 0.5,
+        "gap_x_m": 0.5,
+        "gap_y_m": -3.0
+      },
+      {
+        "a": "restaurant",
+        "b": "bookstore",
+        "clearance_m": 0.5,
+        "gap_x_m": 0.5,
+        "gap_y_m": -3.0
+      },
+      {
+        "a": "bookstore",
+        "b": "bus-stop",
+        "clearance_m": 0.75,
+        "gap_x_m": -2.5,
+        "gap_y_m": 0.75
+      },
+      {
+        "a": "school",
+        "b": "park",
+        "clearance_m": 0.8,
+        "gap_x_m": 0.8,
+        "gap_y_m": -3.6
+      },
+      {
+        "a": "market",
+        "b": "supermarket",
+        "clearance_m": 0.9,
+        "gap_x_m": 0.9,
+        "gap_y_m": -4.6
+      }
+    ],
+    "corridor_checks": 40,
+    "sidewalk_fixture_note": "bus-stop at (-5.6, -4.3) [2.2x1.1m] sits on Maple St North sidewalk (y in [-4.85, -3.75]), 1.15m clear of Maple St centerline y=-6.0m; all 9 buildings have 0.00m overlap with all 4 corridors."
+  },
+  "prepositions": {
+    "next to": {
+      "subject": "school",
+      "reference": "park",
+      "gap_m": 0.8,
+      "same_block": true,
+      "intervening_landmarks": [],
+      "valid": true
+    },
+    "opposite": {
+      "subject": "hospital",
+      "reference": "supermarket",
+      "separating_street": [
+        "river-road"
+      ],
+      "facing_dot": -1.0,
+      "projection_overlap_m": 4.6,
+      "valid": true
+    },
+    "between": {
+      "subject": "restaurant",
+      "flanking": [
+        "post-office",
+        "bookstore"
+      ],
+      "collinear_cross": 0.0,
+      "gap_west_m": 0.5,
+      "gap_east_m": 0.5,
+      "valid": true
+    },
+    "in front of": {
+      "subject": "bus-stop",
+      "reference": "bookstore",
+      "forward_projection_m": 2.8,
+      "lateral_offset_m": 0.0,
+      "clearance_m": 0.75,
+      "valid": true
+    },
+    "behind": {
+      "subject": "bookstore",
+      "reference": "bus-stop",
+      "forward_projection_m": -2.8,
+      "lateral_offset_m": 0.0,
+      "clearance_m": 0.75,
+      "valid": true
+    },
+    "near": {
+      "subject": "my-house",
+      "reference": "school",
+      "edge_distance_m": 7.6,
+      "center_distance_m": 11.7,
+      "neighbourhood_median_distance_m": 13.7,
+      "valid": true
+    }
+  },
+  "routes": {
+    "route-market": {
+      "slide": 6,
+      "target": "market",
+      "waypoints": [
+        [
+          -15.0,
+          -6.0
+        ],
+        [
+          -2.0,
+          -6.0
+        ],
+        [
+          -2.0,
+          0.0
+        ]
+      ],
+      "turns": [
+        {
+          "at_waypoint": [
+            -2.0,
+            -6.0
+          ],
+          "incoming_unit": [
+            1.0,
+            0.0
+          ],
+          "outgoing_unit": [
+            0.0,
+            1.0
+          ],
+          "cross_product_z": 1.0,
+          "svg_cross_product": -1.0,
+          "direction": "left",
+          "cross_street_ordinal": 1,
+          "cross_street_id": "pine-street"
+        }
+      ],
+      "cross_streets_up_to_turn": [
+        "pine-street"
+      ],
+      "final_heading_unit": [
+        0.0,
+        1.0
+      ],
+      "vector_to_target": [
+        4.5,
+        0.0
+      ],
+      "destination_side_cross_z": -4.5,
+      "destination_side": "right",
+      "passed_school_verified": null,
+      "english_dialogue_matched": true
+    },
+    "route-hospital": {
+      "slide": 7,
+      "target": "hospital",
+      "waypoints": [
+        [
+          -15.0,
+          -6.0
+        ],
+        [
+          -2.0,
+          -6.0
+        ],
+        [
+          12.0,
+          -6.0
+        ],
+        [
+          12.0,
+          0.0
+        ]
+      ],
+      "turns": [
+        {
+          "at_waypoint": [
+            12.0,
+            -6.0
+          ],
+          "incoming_unit": [
+            1.0,
+            0.0
+          ],
+          "outgoing_unit": [
+            0.0,
+            1.0
+          ],
+          "cross_product_z": 1.0,
+          "svg_cross_product": -1.0,
+          "direction": "left",
+          "cross_street_ordinal": 2,
+          "cross_street_id": "river-road"
+        }
+      ],
+      "cross_streets_up_to_turn": [
+        "pine-street",
+        "river-road"
+      ],
+      "final_heading_unit": [
+        0.0,
+        1.0
+      ],
+      "vector_to_target": [
+        4.2,
+        0.0
+      ],
+      "destination_side_cross_z": -4.2,
+      "destination_side": "right",
+      "passed_school_verified": null,
+      "english_dialogue_matched": true
+    },
+    "route-park": {
+      "slide": 8,
+      "target": "park",
+      "waypoints": [
+        [
+          -2.0,
+          0.0
+        ],
+        [
+          -2.0,
+          6.0
+        ],
+        [
+          7.5,
+          6.0
+        ]
+      ],
+      "turns": [
+        {
+          "at_waypoint": [
+            -2.0,
+            6.0
+          ],
+          "incoming_unit": [
+            0.0,
+            1.0
+          ],
+          "outgoing_unit": [
+            1.0,
+            0.0
+          ],
+          "cross_product_z": -1.0,
+          "svg_cross_product": 1.0,
+          "direction": "right",
+          "cross_street_ordinal": 1,
+          "cross_street_id": "oak-street"
+        }
+      ],
+      "cross_streets_up_to_turn": [
+        "oak-street"
+      ],
+      "final_heading_unit": [
+        1.0,
+        0.0
+      ],
+      "vector_to_target": [
+        0.0,
+        4.5
+      ],
+      "destination_side_cross_z": 4.5,
+      "destination_side": "left",
+      "passed_school_verified": true,
+      "english_dialogue_matched": true
+    }
+  }
+}

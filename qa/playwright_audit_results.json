@@ -1,0 +1,481 @@
+{
+  "stage": "Stage D - Playwright Multi-Viewport & Interactive Audit",
+  "browser_channel": "chrome",
+  "status": "PASS",
+  "failure_count": 0,
+  "failures": [],
+  "assertions": {
+    "console_errors": 0,
+    "page_errors": 0,
+    "failed_network_requests": 0,
+    "broken_images": 0,
+    "emoji_unicode_count": 0,
+    "crlf_count": 0,
+    "bom_count": 0,
+    "horizontal_overflow_count": 0,
+    "dock_overlap_count": 0
+  },
+  "file_audit": {
+    "crlf_count": 0,
+    "crlf_files": [],
+    "bom_count": 0,
+    "bom_files": [],
+    "emoji_file_count": 0,
+    "emoji_file_hits": [],
+    "slop_word_hits": [],
+    "pure_black_css_hits": [],
+    "bad_js_split_hits": [],
+    "remediation_26_hits": []
+  },
+  "interactive_checks": {
+    "slide3_diorama": {
+      "diorama_visible": true,
+      "inspector_title_after_click": "#10 Hospital",
+      "passed": true,
+      "pins": [
+        {
+          "id": "my-house",
+          "text": "1My House",
+          "centerPctX": 27.5,
+          "centerPctY": 40.6
+        },
+        {
+          "id": "school",
+          "text": "2School",
+          "centerPctX": 45.3,
+          "centerPctY": 33.7
+        },
+        {
+          "id": "park",
+          "text": "3Park",
+          "centerPctX": 52.7,
+          "centerPctY": 30.8
+        },
+        {
+          "id": "post-office",
+          "text": "4Post Office",
+          "centerPctX": 26.8,
+          "centerPctY": 63
+        },
+        {
+          "id": "restaurant",
+          "text": "5Restaurant",
+          "centerPctX": 33.8,
+          "centerPctY": 59.8
+        },
+        {
+          "id": "bookstore",
+          "text": "6Bookstore",
+          "centerPctX": 40.2,
+          "centerPctY": 55.6
+        },
+        {
+          "id": "bus-stop",
+          "text": "7Bus Stop",
+          "centerPctX": 42.1,
+          "centerPctY": 63.1
+        },
+        {
+          "id": "market",
+          "text": "8Market",
+          "centerPctX": 52.6,
+          "centerPctY": 48.3
+        },
+        {
+          "id": "supermarket",
+          "text": "9Supermarket",
+          "centerPctX": 60.5,
+          "centerPctY": 44.8
+        },
+        {
+          "id": "hospital",
+          "text": "10Hospital",
+          "centerPctX": 72.8,
+          "centerPctY": 39.3
+        }
+      ]
+    },
+    "slide4_lightbox": {
+      "specimen_card_count": 10,
+      "slide4_header_speakers": true,
+      "immediate_opacity": "1",
+      "immediate_bg": "rgb(255, 255, 255)",
+      "opened": true,
+      "title": "#6 Bookstore",
+      "ipa": "/ˈbʊk.stɔː/",
+      "closed_cleanly": true,
+      "passed": true
+    },
+    "slide5_prepositions": {
+      "sentence": "\"The restaurant is between the post office and the bookstore.\"",
+      "selected_svg_nodes": [
+        "post-office",
+        "restaurant",
+        "bookstore"
+      ],
+      "passed": true
+    },
+    "slide6_route_controls": {
+      "wcag_no_aria_pressed": true,
+      "label_while_playing": "Pause route",
+      "label_when_paused": "Play route",
+      "passed": true
+    },
+    "presenter_notes_popover": {
+      "opened": true,
+      "vi_sample": "Bắt đầu từ cổng Market trên Pine Street nhìn lên hướng Bắc, đi thẳng lên Oak Street, rẽ phải đi ngang qua School, công viên nằm bên tay trái.",
+      "closed_cleanly": true,
+      "passed": true
+    },
+    "overview_and_qna_jump": {
+      "overview_opened": true,
+      "jumped_to_12": true,
+      "qna_jumped_to_3": true,
+      "passed": true
+    }
+  },
+  "metrics_1440x900": [
+    {
+      "slide": 1,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 9,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 2,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 2,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 8,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 3,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 8,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 4,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 10,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 7,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 5,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 2,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 6,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 6,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 9,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 7,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 2,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 9,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 8,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 2,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 9,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 9,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 0,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 20,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 10,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 0,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 6,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 11,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 6,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 12,
+      "viewport": "1440x900",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 8,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    }
+  ],
+  "metrics_1280x720": [
+    {
+      "slide": 1,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 9,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 2,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 2,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 8,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 3,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 8,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 4,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 10,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 7,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 5,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 2,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 6,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 6,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 9,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 7,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 2,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 9,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 8,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 2,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 9,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 9,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 0,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 20,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 10,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 0,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 6,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 11,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 6,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 12,
+      "viewport": "1280x720",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 0,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 8,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    }
+  ],
+  "metrics_mobile_390x844": [
+    {
+      "slide": 3,
+      "viewport": "390x844",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 220,
+      "dockOverlapPx": 0,
+      "visibleImages": 1,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 8,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    },
+    {
+      "slide": 4,
+      "viewport": "390x844",
+      "horizOverflowPx": 0,
+      "vertOverflowPx": 1672,
+      "dockOverlapPx": 0,
+      "visibleImages": 10,
+      "brokenImages": [],
+      "unhydratedIcons": 0,
+      "visibleSvgIcons": 7,
+      "brokenSvgIcons": [],
+      "clippedElements": []
+    }
+  ]
+}

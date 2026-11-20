@@ -1,0 +1,208 @@
+{
+  "stage": "Stage C - Programmatic 3D Asset Pre-Check",
+  "status": "PASS",
+  "failure_count": 0,
+  "failures": [],
+  "metrics": {
+    "my-house.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        81,
+        151,
+        919,
+        940
+      ],
+      "min_border_margin_px": 81,
+      "fill_width_pct": 81.8,
+      "fill_height_pct": 77.1,
+      "mean_luma": 91.5,
+      "luma_stddev": 42.9,
+      "bytes": 781718
+    },
+    "school.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        119,
+        89,
+        885,
+        943
+      ],
+      "min_border_margin_px": 81,
+      "fill_width_pct": 74.8,
+      "fill_height_pct": 83.4,
+      "mean_luma": 88.4,
+      "luma_stddev": 43.4,
+      "bytes": 883849
+    },
+    "park.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        81,
+        275,
+        930,
+        826
+      ],
+      "min_border_margin_px": 81,
+      "fill_width_pct": 82.9,
+      "fill_height_pct": 53.8,
+      "mean_luma": 93.9,
+      "luma_stddev": 48.3,
+      "bytes": 687151
+    },
+    "post-office.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        100,
+        168,
+        896,
+        943
+      ],
+      "min_border_margin_px": 81,
+      "fill_width_pct": 77.7,
+      "fill_height_pct": 75.7,
+      "mean_luma": 92.8,
+      "luma_stddev": 45.8,
+      "bytes": 884791
+    },
+    "restaurant.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        92,
+        178,
+        907,
+        943
+      ],
+      "min_border_margin_px": 81,
+      "fill_width_pct": 79.6,
+      "fill_height_pct": 74.7,
+      "mean_luma": 87.6,
+      "luma_stddev": 48.8,
+      "bytes": 904342
+    },
+    "bookstore.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        111,
+        163,
+        877,
+        943
+      ],
+      "min_border_margin_px": 81,
+      "fill_width_pct": 74.8,
+      "fill_height_pct": 76.2,
+      "mean_luma": 94.1,
+      "luma_stddev": 41.9,
+      "bytes": 830412
+    },
+    "bus-stop.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        81,
+        205,
+        926,
+        856
+      ],
+      "min_border_margin_px": 81,
+      "fill_width_pct": 82.5,
+      "fill_height_pct": 63.6,
+      "mean_luma": 87.5,
+      "luma_stddev": 53.4,
+      "bytes": 691318
+    },
+    "market.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        81,
+        183,
+        914,
+        926
+      ],
+      "min_border_margin_px": 81,
+      "fill_width_pct": 81.3,
+      "fill_height_pct": 72.6,
+      "mean_luma": 90.6,
+      "luma_stddev": 49.8,
+      "bytes": 877598
+    },
+    "supermarket.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        81,
+        242,
+        914,
+        900
+      ],
+      "min_border_margin_px": 81,
+      "fill_width_pct": 81.3,
+      "fill_height_pct": 64.3,
+      "mean_luma": 94.9,
+      "luma_stddev": 52.5,
+      "bytes": 779858
+    },
+    "hospital.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        81,
+        206,
+        914,
+        911
+      ],
+      "min_border_margin_px": 81,
+      "fill_width_pct": 81.3,
+      "fill_height_pct": 68.8,
+      "mean_luma": 97.5,
+      "luma_stddev": 47.0,
+      "bytes": 799656
+    },
+    "overview-diorama.png": {
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "mean_luma": 171.0,
+      "luma_stddev": 51.3,
+      "bytes": 2189814
+    }
+  }
+}

@@ -1,0 +1,1157 @@
+/* Slide 1: Cover Plate */
+.cover-grid {
+  display: grid;
+  grid-template-columns: 1.12fr 1fr;
+  gap: clamp(14px, 2vw, 24px);
+  align-items: stretch;
+}
+
+.cover-copy {
+  padding: clamp(18px, 2.2vw, 30px);
+  display: grid;
+  align-content: space-between;
+  gap: 16px;
+}
+
+.cover-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.atlas-tag {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent-pine);
+  background-color: var(--accent-pine-soft);
+  border: 1px solid rgba(27, 107, 74, 0.22);
+  border-radius: var(--radius-pill);
+  padding: 4px 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cover-h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 3.8vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+  color: var(--ink);
+}
+
+.cover-subtitle {
+  margin: 4px 0 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 1.7vw, 1.45rem);
+  font-weight: 500;
+  color: var(--accent-vermilion);
+}
+
+.cover-desc {
+  margin: 0;
+  font-size: 0.96rem;
+  color: var(--ink-slate);
+  max-width: 52ch;
+}
+
+.member-roster {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.member-pill {
+  padding: 8px 11px;
+  background-color: var(--bg-sand);
+  border: 1px solid var(--border-draft);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.875rem;
+}
+
+.member-pill strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.member-role-note {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-slate);
+}
+
+.cover-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.cover-visual {
+  padding: 14px;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  align-content: center;
+  gap: 10px;
+}
+
+.diorama-frame {
+  background-color: #CACBC9;
+  border: 1px solid var(--border-draft);
+  border-radius: var(--radius-well);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+}
+
+.diorama-frame img {
+  width: 100%;
+  height: 100%;
+  max-height: 410px;
+  object-fit: contain;
+}
+
+.atlas-scale-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--ink-slate);
+}
+
+/* Slide 2: Introduction */
+.intro-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(14px, 2vw, 22px);
+  align-items: stretch;
+}
+
+.intro-speech-plate {
+  padding: clamp(18px, 2vw, 26px);
+  display: grid;
+  align-content: space-between;
+  gap: 14px;
+}
+
+.quote-block {
+  margin: 0;
+  padding: 16px 18px;
+  background-color: var(--bg-sand);
+  border-left: 4px solid var(--accent-pine);
+  border-radius: 0 var(--radius-well) var(--radius-well) 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 1.4vw, 1.24rem);
+  line-height: 1.48;
+  color: var(--ink);
+}
+
+.intro-facts {
+  display: grid;
+  gap: 10px;
+}
+
+.fact-row {
+  padding: 10px 12px;
+  border: 1px solid var(--border-draft);
+  border-radius: var(--radius-well);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.fact-icon {
+  color: var(--accent-pine);
+  margin-top: 2px;
+}
+
+.intro-specimens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.specimen-feature {
+  padding: 14px;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.specimen-well {
+  background-color: var(--bg-sand);
+  border: 1px solid var(--border-draft);
+  border-radius: var(--radius-well);
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  min-height: 190px;
+}
+
+.specimen-well img {
+  max-height: 220px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Slide 3: Interactive Neighbourhood Atlas */
+.atlas-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.95fr) minmax(270px, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.atlas-canvas-card {
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.atlas-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.segmented-toggle {
+  display: inline-flex;
+  padding: 3px;
+  background-color: var(--bg-sand);
+  border: 1px solid var(--border-draft);
+  border-radius: 10px;
+  gap: 3px;
+}
+
+.seg-btn {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--ink-slate);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.seg-btn[aria-pressed="true"] {
+  background-color: var(--bg-plate);
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(23, 28, 34, 0.12);
+}
+
+.atlas-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink-slate);
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-swatch {
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  border: 1px solid var(--border-strong);
+}
+
+.atlas-stage-box {
+  position: relative;
+  background-color: var(--bg-paper);
+  border: 1px solid var(--border-draft);
+  border-radius: var(--radius-well);
+  overflow: hidden;
+  aspect-ratio: 780 / 520;
+  max-height: min(448px, 53vh);
+  width: 100%;
+}
+
+.prep-map-stage {
+  max-height: min(360px, 46vh);
+}
+
+.route-map-stage {
+  max-height: min(365px, 44vh);
+}
+
+.atlas-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.diorama-overlay-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  container-type: size;
+  display: grid;
+  place-items: center;
+  background-color: #CACBC9;
+}
+
+.diorama-overlay-wrap[hidden] {
+  display: none;
+}
+
+.diorama-pin-canvas {
+  position: relative;
+  width: min(100cqw, calc(100cqh * 16 / 9));
+  aspect-ratio: 16 / 9;
+}
+
+.diorama-overlay-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.diorama-pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid #FFFFFF;
+  background-color: rgba(23, 28, 34, 0.88);
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(23, 28, 34, 0.30);
+  transition: transform 0.14s ease, background-color 0.14s ease;
+}
+
+.diorama-pin-label {
+  display: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.diorama-pin:hover,
+.diorama-pin:focus-visible,
+.diorama-pin[aria-pressed="true"] {
+  background-color: var(--accent-vermilion);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  transform: translate(-50%, -50%) scale(1.06);
+  z-index: 6;
+}
+
+.diorama-pin:hover .diorama-pin-label,
+.diorama-pin:focus-visible .diorama-pin-label,
+.diorama-pin[aria-pressed="true"] .diorama-pin-label {
+  display: inline;
+}
+
+.inspector-card {
+  padding: 12px;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: 8px;
+}
+
+.inspector-well {
+  background-color: var(--bg-sand);
+  border: 1px solid var(--border-draft);
+  border-radius: var(--radius-well);
+  padding: 6px;
+  display: grid;
+  place-items: center;
+  height: clamp(136px, 21vh, 185px);
+}
+
+.inspector-well img {
+  max-height: clamp(120px, 19vh, 168px);
+  width: auto;
+  object-fit: contain;
+}
+
+.inspector-meta {
+  display: grid;
+  gap: 5px;
+}
+
+.inspector-meta h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.coord-line {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent-pine);
+}
+
+.ipa-line {
+  font-family: "Segoe UI", Arial, var(--font-body);
+  font-size: 0.82rem;
+  color: var(--ink-slate);
+}
+
+.inspector-sentence {
+  margin: 4px 0 0;
+  font-family: var(--font-serif);
+  font-size: 0.98rem;
+  color: var(--ink);
+}
+
+.inspector-detail {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--ink-slate);
+}
+
+.quick-pin-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-content: start;
+}
+
+.quick-pin-btn {
+  min-height: 32px;
+  padding: 3px 9px;
+  border-radius: 7px;
+  border: 1px solid var(--border-draft);
+  background-color: var(--bg-paper);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.quick-pin-btn[aria-pressed="true"] {
+  background-color: var(--accent-pine);
+  border-color: var(--accent-pine);
+  color: var(--bg-plate);
+}
+
+/* Slide 4: 5x2 Places Specimen Grid */
+.specimen-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.specimen-card {
+  width: 100%;
+  text-align: left;
+  padding: 9px;
+  border-radius: 12px;
+  border: 1px solid var(--border-draft);
+  background-color: var(--bg-plate);
+  box-shadow: var(--shadow-plate);
+  display: grid;
+  gap: 7px;
+  align-content: start;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.specimen-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-pine);
+}
+
+.specimen-thumb {
+  background-color: var(--bg-sand);
+  border: 1px solid var(--border-draft);
+  border-radius: 8px;
+  height: clamp(92px, 13vh, 114px);
+  display: grid;
+  place-items: center;
+  padding: 5px;
+}
+
+.specimen-thumb img {
+  max-height: clamp(82px, 11.5vh, 102px);
+  width: auto;
+  object-fit: contain;
+}
+
+.specimen-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.specimen-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.specimen-num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-pine);
+}
+
+.specimen-ipa {
+  font-family: "Segoe UI", Arial, var(--font-body);
+  font-size: 0.76rem;
+  color: var(--ink-slate);
+}
+
+.specimen-sentence {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--ink-slate);
+}
+
+/* Slide 5: Prepositions Lab */
+.prep-layout {
+  display: grid;
+  grid-template-columns: minmax(290px, 1fr) minmax(0, 1.45fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.prep-controls-panel {
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.prep-pill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.prep-btn {
+  min-height: 44px;
+  padding: 6px 10px;
+  border-radius: 9px;
+  border: 1px solid var(--border-draft);
+  background-color: var(--bg-paper);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.prep-btn[aria-pressed="true"] {
+  background-color: var(--accent-pine);
+  border-color: var(--accent-pine);
+  color: var(--bg-plate);
+}
+
+.prep-sentence-box {
+  padding: 12px 14px;
+  background-color: var(--accent-pine-soft);
+  border: 1px solid rgba(27, 107, 74, 0.24);
+  border-radius: 10px;
+  display: grid;
+  gap: 4px;
+}
+
+.prep-sentence-text {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.prep-note-text {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--ink-slate);
+}
+
+.qa-tabs-wrap {
+  display: grid;
+  gap: 8px;
+  border-top: 1px solid var(--border-draft);
+  padding-top: 10px;
+}
+
+.qa-tab-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.qa-tab-btn {
+  min-height: 36px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-draft);
+  background-color: var(--bg-plate);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.qa-tab-btn[aria-pressed="true"] {
+  background-color: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg-plate);
+}
+
+.qa-answer-box {
+  padding: 10px 12px;
+  background-color: var(--bg-sand);
+  border-radius: 9px;
+  font-size: 0.86rem;
+}
+
+.qa-answer-box strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--ink);
+}
+
+.prep-map-card {
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.prep-pair-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.mini-thumb-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 4px 5px;
+  border: 1px solid var(--border-draft);
+  border-radius: 9px;
+  background-color: var(--bg-sand);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.mini-thumb-chip img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Slides 6, 7, 8: Direction Routes */
+.route-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(0, 1.45fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.dialogue-column {
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+  align-content: space-between;
+}
+
+.dialogue-list {
+  display: grid;
+  gap: 8px;
+}
+
+.dialogue-turn {
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border-draft);
+  background-color: var(--bg-paper);
+  display: grid;
+  gap: 2px;
+}
+
+.dialogue-turn.turn-giver {
+  background-color: var(--accent-pine-soft);
+  border-color: rgba(27, 107, 74, 0.25);
+}
+
+.turn-speaker {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--accent-pine);
+}
+
+.turn-giver .turn-speaker {
+  color: var(--accent-pine-dark);
+}
+
+.turn-line {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 0.96rem;
+  color: var(--ink);
+}
+
+.route-target-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 11px;
+  background-color: var(--bg-sand);
+  border: 1px solid var(--border-draft);
+  border-radius: 10px;
+}
+
+.route-target-preview img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.route-target-text strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+}
+
+.route-target-text span {
+  font-size: 0.82rem;
+  color: var(--ink-slate);
+}
+
+.route-map-column {
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.route-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.route-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.step-badge-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.route-step-pill {
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border-draft);
+  background-color: var(--bg-paper);
+  font-size: 0.75rem;
+  line-height: 1.3;
+  color: var(--ink-slate);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.route-step-pill.is-active {
+  background-color: var(--accent-vermilion-soft);
+  border-color: var(--accent-vermilion);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Slide 9: Vocabulary & Spatial Reference */
+.vocab-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.25fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.vocab-panel {
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.vocab-panel h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
+
+.vocab-places-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.vocab-place-item {
+  padding: 7px 9px;
+  border-radius: 8px;
+  border: 1px solid var(--border-draft);
+  background-color: var(--bg-paper);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+}
+
+.vocab-place-item strong {
+  display: block;
+  line-height: 1.2;
+}
+
+.vocab-place-item span {
+  font-family: "Segoe UI", Arial, var(--font-body);
+  font-size: 0.74rem;
+  color: var(--ink-slate);
+}
+
+.prep-diagrams-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.prep-diagram-card {
+  padding: 8px;
+  border-radius: 9px;
+  border: 1px solid var(--border-draft);
+  background-color: var(--bg-paper);
+  display: grid;
+  gap: 5px;
+  text-align: center;
+}
+
+.prep-diagram-svg {
+  width: 100%;
+  height: 54px;
+}
+
+.prep-diagram-card strong {
+  font-size: 0.86rem;
+  color: var(--accent-pine);
+}
+
+.prep-diagram-card span {
+  font-size: 0.74rem;
+  color: var(--ink-slate);
+}
+
+.direction-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  border-top: 1px solid var(--border-draft);
+  padding-top: 9px;
+}
+
+.dir-phrase-chip {
+  padding: 7px 9px;
+  border-radius: 8px;
+  background-color: var(--bg-sand);
+  border: 1px solid var(--border-draft);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+}
+
+/* Slide 10: Teamwork Ledger */
+.teamwork-wrap {
+  padding: 12px 14px;
+  display: grid;
+  gap: 9px;
+}
+
+.leader-banner {
+  padding: 8px 12px;
+  background-color: var(--accent-pine-soft);
+  border: 1px solid rgba(27, 107, 74, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.86rem;
+}
+
+.ledger-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border-draft);
+  border-radius: 10px;
+}
+
+.ledger-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+  text-align: left;
+}
+
+.ledger-table th {
+  background-color: var(--bg-sand);
+  padding: 8px 11px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 1px solid var(--border-draft);
+}
+
+.ledger-table td {
+  padding: 7px 11px;
+  border-bottom: 1px solid var(--border-draft);
+  vertical-align: top;
+}
+
+.ledger-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.student-name-cell {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.slides-mono-cell {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  white-space: nowrap;
+  color: var(--accent-pine);
+}
+
+/* Slide 11: Conclusion & Favourite Place */
+.conclusion-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.park-feature {
+  padding: 16px;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.park-feature-well {
+  background-color: var(--bg-sand);
+  border: 1px solid var(--border-draft);
+  border-radius: var(--radius-well);
+  padding: 14px;
+  display: grid;
+  place-items: center;
+}
+
+.park-feature-well img {
+  max-height: 350px;
+  width: auto;
+  object-fit: contain;
+}
+
+.conclusion-copy {
+  padding: 20px;
+  display: grid;
+  align-content: space-between;
+  gap: 14px;
+}
+
+.summary-points {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+/* Slide 12: Thank You & Live Q&A */
+.closing-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.closing-card {
+  padding: 24px;
+  display: grid;
+  align-content: space-between;
+  gap: 16px;
+}
+
+.closing-h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.2vw, 2.75rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.credit-badge {
+  padding: 8px 11px;
+  border-radius: 9px;
+  border: 1px solid var(--border-draft);
+  background-color: var(--bg-sand);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.closing-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* SVG Atlas styling */
+.atlas-building {
+  cursor: pointer;
+  transition: opacity 0.16s ease;
+}
+
+.atlas-building-box {
+  fill: var(--bg-plate);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  transition: fill 0.16s ease, stroke 0.16s ease, stroke-width 0.16s ease;
+}
+
+.atlas-building.is-park .atlas-building-box {
+  fill: var(--map-park);
+  stroke: var(--accent-pine);
+}
+
+.atlas-building:hover .atlas-building-box,
+.atlas-building.is-selected .atlas-building-box {
+  stroke: var(--accent-pine);
+  stroke-width: 2.5;
+  fill: var(--accent-pine-soft);
+}
+
+.atlas-building.is-route-target .atlas-building-box {
+  stroke: var(--accent-vermilion);
+  stroke-width: 2.8;
+  fill: var(--accent-vermilion-soft);
+}
+
+.atlas-building.is-dimmed {
+  opacity: 0.45;
+}
+
+.atlas-building-label {
+  font-family: var(--font-body);
+  font-size: 10.5px;
+  font-weight: 700;
+  fill: var(--ink);
+  pointer-events: none;
+}
+
+.atlas-building-label-compact {
+  font-size: 8px;
+}
+
+.atlas-street-label {
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 700;
+  fill: var(--ink);
+  letter-spacing: 0.03em;
+  pointer-events: none;
+}
+
+.atlas-route-line {
+  fill: none;
+  stroke: var(--accent-vermilion);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 10 8;
+}
+
+.atlas-walker-group {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Responsive collapse below 1060px and 768px */
+@media (max-width: 1060px) {
+  .specimen-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .atlas-workspace,
+  .prep-layout,
+  .route-layout,
+  .vocab-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .cover-grid,
+  .intro-layout,
+  .intro-specimens,
+  .conclusion-layout,
+  .closing-layout,
+  .member-roster,
+  .credits-grid,
+  .vocab-places-list,
+  .prep-diagrams-grid,
+  .direction-strip,
+  .step-badge-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .specimen-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prep-pill-grid {
+    grid-template-columns: 1fr;
+  }
+}

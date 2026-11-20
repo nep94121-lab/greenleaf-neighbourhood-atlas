@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Neighbourhood: Let's Find the Way! | Greenleaf Neighbourhood</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231B6B4A' stroke-width='2.2'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolygon points='16,8 14,14 8,16 10,10' fill='%231B6B4A'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/fonts/fonts.css">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/slides.css">
+  <link rel="stylesheet" href="styles/dialogs.css">
+</head>
+<body>
+  <div class="deck-shell">
+    <header class="deck-topbar">
+      <div class="brand-mark">
+        <span class="brand-seal" aria-hidden="true">
+          <span data-icon="compass"></span>
+        </span>
+        <div>
+          <span class="brand-title">Greenleaf Neighbourhood</span>
+          <span class="brand-sub">Grade 6 English Project</span>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <button type="button" class="chrome-btn" id="slide-grid-btn" commandfor="slide-overview-dialog" command="show-modal">
+          <span data-icon="grid" data-icon-class="icon-sm"></span>
+          <span class="chrome-btn-label">All 12 slides</span>
+        </button>
+        <button type="button" class="chrome-btn chrome-btn-primary" id="notes-toggle-btn" commandfor="presenter-notes" command="toggle-popover">
+          <span data-icon="file-text" data-icon-class="icon-sm"></span>
+          <span class="chrome-btn-label">Presenter notes</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="slide-stage" id="slide-stage">
+      <div class="sr-only" id="slide-live-announcer" aria-live="polite"></div>
+      <!-- Slide 1: Cover / Title Plate -->
+      <section class="slide" data-slide="1" aria-label="Slide 1: Cover Plate">
+        <div class="cover-grid">
+          <div class="plate cover-copy">
+            <div class="cover-meta-row">
+              <span class="atlas-tag">
+                <span data-icon="map-pin" data-icon-class="icon-sm"></span>
+                Illustrated Atlas Edition
+              </span>
+              <span class="speaker-chip">
+                <span data-icon="users" data-icon-class="icon-sm"></span>
+                6 Speakers
+              </span>
+            </div>
+
+            <div>
+              <h1 class="cover-h1">My Neighbourhood</h1>
+              <p class="cover-subtitle">Let's Find the Way! (Greenleaf Neighbourhood)</p>
+              <p class="cover-desc">An interactive 3D and street-plan presentation created by six Grade 6 students to explore ten places, spatial prepositions, and real direction routes.</p>
+            </div>
+
+            <div class="member-roster" id="cover-roster" aria-label="Group members"></div>
+
+            <div class="cover-actions">
+              <button type="button" class="chrome-btn chrome-btn-primary" data-jump-slide="2">
+                <span data-icon="play" data-icon-class="icon-sm"></span>
+                Start presentation
+              </button>
+              <button type="button" class="chrome-btn" data-jump-slide="3">
+                <span data-icon="map" data-icon-class="icon-sm"></span>
+                Open interactive map
+              </button>
+            </div>
+          </div>
+
+          <div class="plate cover-visual">
+            <div class="diorama-frame">
+              <img src="assets/blender/overview-diorama.png" alt="Sunlit 3D diorama overview of Greenleaf Neighbourhood showing all ten places and four streets">
+            </div>
+            <div class="atlas-scale-footer">
+              <span>4 Streets: Oak, Maple, Pine, River</span>
+              <span>10 Landmarks | N +Y / E +X</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 2: Introduction -->
+      <section class="slide" data-slide="2" hidden aria-label="Slide 2: Introduction">
+        <div class="slide-header">
+          <div class="slide-heading-group">
+            <p class="slide-kicker">Part 1: Introduction</p>
+            <h2 class="slide-title">Welcome to Greenleaf Neighbourhood</h2>
+          </div>
+          <span class="speaker-chip">
+            <span data-icon="message-circle" data-icon-class="icon-sm"></span>
+            Speakers: Gia Khanh &amp; Yến Nhi
+          </span>
+        </div>
+
+        <div class="intro-layout">
+          <div class="plate intro-speech-plate">
+            <blockquote class="quote-block">
+              "Hello everyone! Welcome to our neighbourhood. This is our map. It shows some interesting places in our neighbourhood. Let's have a look!"
+            </blockquote>
+
+            <div class="intro-facts">
+              <div class="fact-row">
+                <span class="fact-icon" data-icon="compass"></span>
+                <div>
+                  <strong>An imagined neighbourhood designed by our team</strong>
+                  <div style="color: var(--ink-slate);">We planned four clean streets and ten everyday places where people study, shop, eat, travel, and relax.</div>
+                </div>
+              </div>
+              <div class="fact-row">
+                <span class="fact-icon" data-icon="users"></span>
+                <div>
+                  <strong>Every member speaks English on stage</strong>
+                  <div style="color: var(--ink-slate);">Gia Khanh, Phước, Yến Nhi, Anh Thi, Tùng Lâm, and Tuấn Anh share introductions, place descriptions, and live pair directions.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="intro-specimens">
+            <article class="plate specimen-feature">
+              <div class="specimen-well">
+                <img src="assets/blender/my-house.png" alt="3D render of My House on Oak Street">
+              </div>
+              <div>
+                <strong style="font-family: var(--font-display);">1. My House</strong>
+                <div style="font-size: 0.85rem; color: var(--ink-slate);">Located on Oak Street, near the school.</div>
+              </div>
+            </article>
+
+            <article class="plate specimen-feature">
+              <div class="specimen-well">
+                <img src="assets/blender/park.png" alt="3D render of Greenleaf Park with trees and fountain">
+              </div>
+              <div>
+                <strong style="font-family: var(--font-display);">3. Greenleaf Park</strong>
+                <div style="font-size: 0.85rem; color: var(--ink-slate);">Our favourite green park next to the school.</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 3: Interactive Neighbourhood Atlas -->
+      <section class="slide" data-slide="3" hidden aria-label="Slide 3: Interactive Neighbourhood Atlas">
+        <div class="slide-header">
+          <div class="slide-heading-group">
+            <p class="slide-kicker">Part 2A: Designing the Map</p>
+            <h2 class="slide-title">Our Neighbourhood Atlas</h2>
+          </div>
+          <span class="speaker-chip">
+            <span data-icon="map-pin" data-icon-class="icon-sm"></span>
+            Speakers: Phước &amp; Tùng Lâm
+          </span>
+        </div>
+
+        <div class="atlas-workspace">
+          <div class="plate atlas-canvas-card">
+            <div class="atlas-toolbar">
+              <div class="segmented-toggle" role="group" aria-label="Map view mode">
+                <button type="button" class="seg-btn" id="mode-svg-btn" aria-pressed="true">
+                  <span data-icon="map" data-icon-class="icon-sm"></span>
+                  Street Atlas
+                </button>
+                <button type="button" class="seg-btn" id="mode-diorama-btn" aria-pressed="false">
+                  <span data-icon="compass" data-icon-class="icon-sm"></span>
+                  3D Diorama Pins
+                </button>
+              </div>
+
+              <div class="atlas-legend" aria-label="Map legend">
+                <span class="legend-item"><span class="legend-swatch" style="background: var(--bg-plate); border-color: var(--ink);"></span>Building</span>
+                <span class="legend-item"><span class="legend-swatch" style="background: var(--map-park); border-color: var(--accent-pine);"></span>Park</span>
+                <span class="legend-item"><span class="legend-swatch" style="background: var(--accent-pine);"></span>Door facing street</span>
+              </div>
+            </div>
+
+            <div class="atlas-stage-box">
+              <div id="atlas-svg-container" style="width: 100%; height: 100%;"></div>
+              <div id="atlas-diorama-container" class="diorama-overlay-wrap" hidden>
+                <div class="diorama-pin-canvas">
+                  <img class="diorama-overlay-img" src="assets/blender/overview-diorama.png" alt="3D overview diorama of Greenleaf Neighbourhood with clickable landmark pins">
+                  <div id="diorama-pin-layer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="plate inspector-card" aria-label="Selected place inspector">
+            <div class="inspector-well">
+              <img id="atlas-inspector-img" src="assets/blender/my-house.png" alt="Selected building 3D render">
+            </div>
+            <div class="inspector-meta">
+              <h3 id="atlas-inspector-name">#1 My House</h3>
+              <span class="ipa-line" id="atlas-inspector-ipa">/maɪ ˈhaʊs/</span>
+              <span class="coord-line" id="atlas-inspector-coords">Oak Street | (-9.5m, +10.5m)</span>
+              <p class="inspector-sentence" id="atlas-inspector-sentence">"My house is on Oak Street, near the school."</p>
+              <p class="inspector-detail" id="atlas-inspector-detail"></p>
+            </div>
+            <div class="quick-pin-list" id="atlas-quick-pins" aria-label="Select any place"></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Slide 4: Places in Our Neighbourhood -->
+      <section class="slide" data-slide="4" hidden aria-label="Slide 4: Places in Our Neighbourhood">
+        <div class="slide-header">
+          <div class="slide-heading-group">
+            <p class="slide-kicker">Part 2B: Places Specimen Gallery</p>
+            <h2 class="slide-title">Ten Places in Our Neighbourhood</h2>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;">
+            <span class="speaker-chip">
+              <span data-icon="users" data-icon-class="icon-sm"></span>
+              Speakers: Phước &amp; Anh Thi
+            </span>
+            <span class="speaker-chip">
+              <span data-icon="maximize-2" data-icon-class="icon-sm"></span>
+              Click any plate to inspect in 3D
+            </span>
+          </div>
+        </div>
+
+        <div class="specimen-grid" id="places-specimen-grid"></div>
+      </section>
+
+      <!-- Slide 5: Describing Locations -->
+      <section class="slide" data-slide="5" hidden aria-label="Slide 5: Describing Locations">
+        <div class="slide-header">
+          <div class="slide-heading-group">
+            <p class="slide-kicker">Part 2B: Spatial Prepositions</p>
+            <h2 class="slide-title">Where Are the Places?</h2>
+          </div>
+          <span class="speaker-chip">
+            <span data-icon="navigation" data-icon-class="icon-sm"></span>
+            Speakers: Yến Nhi &amp; Anh Thi
+          </span>
+        </div>
+
+        <div class="prep-layout">
+          <div class="plate prep-controls-panel">
+            <div class="prep-pill-grid" id="prep-pill-grid" role="group" aria-label="Select spatial preposition"></div>
+
+            <div class="prep-sentence-box" aria-live="polite">
+              <p class="prep-sentence-text" id="prep-sentence-text">"The school is next to the park."</p>
+              <p class="prep-note-text" id="prep-note-text"></p>
+            </div>
+
+            <div class="qa-tabs-wrap">
+              <div class="qa-tab-row" id="qa-tab-row" role="group" aria-label="Speaking Q&amp;A prompts"></div>
+              <div class="qa-answer-box" id="qa-answer-box"></div>
+            </div>
+          </div>
+
+          <div class="plate prep-map-card">
+            <div id="prep-svg-container" class="atlas-stage-box prep-map-stage"></div>
+            <div class="prep-pair-strip" id="prep-pair-strip" aria-label="Highlighted 3D buildings"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6: Pair 1 Directions -> Market -->
+      <section class="slide" data-slide="6" hidden aria-label="Slide 6: Pair 1 Asking and Giving Directions to the Market">
+        <div class="slide-header">
+          <div class="slide-heading-group">
+            <p class="slide-kicker">Part 2C: Pair 1 Directions</p>
+            <h2 class="slide-title">Finding the Way to the Market</h2>
+          </div>
+          <span class="speaker-chip">
+            <span data-icon="route" data-icon-class="icon-sm"></span>
+            Gia Khanh &amp; Phước
+          </span>
+        </div>
+
+        <div class="route-layout">
+          <div class="plate dialogue-column">
+            <div class="dialogue-list" id="route-dialogue-6"></div>
+            <div class="route-target-preview">
+              <img src="assets/blender/market.png" alt="3D model of Market on Pine Street">
+              <div class="route-target-text">
+                <strong>Destination: Market (+2.5m, 0.0m)</strong>
+                <span>Faces West onto Pine Street. First turning on the left from Maple Street.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="plate route-map-column">
+            <div class="route-toolbar">
+              <div class="route-controls">
+                <button type="button" class="chrome-btn chrome-btn-primary" id="route-play-6">
+                  <span data-icon="play" data-icon-class="icon-sm"></span>
+                  <span class="route-play-label">Play route</span>
+                </button>
+                <button type="button" class="chrome-btn" id="route-replay-6">
+                  <span data-icon="rotate-ccw" data-icon-class="icon-sm"></span>
+                  Replay
+                </button>
+                <button type="button" class="chrome-btn" id="route-next-step-6">
+                  <span data-icon="chevron-right" data-icon-class="icon-sm"></span>
+                  Next step
+                </button>
+              </div>
+              <span class="coord-line">Maple St (E) to Pine St (N)</span>
+            </div>
+            <div id="route-map-6" class="atlas-stage-box route-map-stage"></div>
+            <div class="step-badge-strip" id="route-steps-6"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 7: Pair 2 Directions -> Hospital -->
+      <section class="slide" data-slide="7" hidden aria-label="Slide 7: Pair 2 Asking and Giving Directions to the Hospital">
+        <div class="slide-header">
+          <div class="slide-heading-group">
+            <p class="slide-kicker">Part 2C: Pair 2 Directions</p>
+            <h2 class="slide-title">Finding the Way to the Hospital</h2>
+          </div>
+          <span class="speaker-chip">
+            <span data-icon="route" data-icon-class="icon-sm"></span>
+            Yến Nhi &amp; Anh Thi
+          </span>
+        </div>
+
+        <div class="route-layout">
+          <div class="plate dialogue-column">
+            <div class="dialogue-list" id="route-dialogue-7"></div>
+            <div class="route-target-preview">
+              <img src="assets/blender/hospital.png" alt="3D model of Hospital on River Road">
+              <img src="assets/blender/supermarket.png" alt="3D model of Supermarket opposite Hospital" style="width: 58px; height: 58px;">
+              <div class="route-target-text">
+                <strong>Hospital (+16.2m, 0.0m)</strong>
+                <span>Second turning on the left onto River Road, on your right opposite the supermarket.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="plate route-map-column">
+            <div class="route-toolbar">
+              <div class="route-controls">
+                <button type="button" class="chrome-btn chrome-btn-primary" id="route-play-7">
+                  <span data-icon="play" data-icon-class="icon-sm"></span>
+                  <span class="route-play-label">Play route</span>
+                </button>
+                <button type="button" class="chrome-btn" id="route-replay-7">
+                  <span data-icon="rotate-ccw" data-icon-class="icon-sm"></span>
+                  Replay
+                </button>
+                <button type="button" class="chrome-btn" id="route-next-step-7">
+                  <span data-icon="chevron-right" data-icon-class="icon-sm"></span>
+                  Next step
+                </button>
+              </div>
+              <span class="coord-line">Maple St (E) to River Rd (N)</span>
+            </div>
+            <div id="route-map-7" class="atlas-stage-box route-map-stage"></div>
+            <div class="step-badge-strip" id="route-steps-7"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 8: Pair 3 Directions -> Park -->
+      <section class="slide" data-slide="8" hidden aria-label="Slide 8: Pair 3 Asking and Giving Directions to the Park">
+        <div class="slide-header">
+          <div class="slide-heading-group">
+            <p class="slide-kicker">Part 2C: Pair 3 Directions</p>
+            <h2 class="slide-title">Finding the Way to the Park</h2>
+          </div>
+          <span class="speaker-chip">
+            <span data-icon="route" data-icon-class="icon-sm"></span>
+            Tùng Lâm &amp; Tuấn Anh
+          </span>
+        </div>
+
+        <div class="route-layout">
+          <div class="plate dialogue-column">
+            <div class="dialogue-list" id="route-dialogue-8"></div>
+            <div class="route-target-preview">
+              <img src="assets/blender/park.png" alt="3D model of Park on Oak Street">
+              <img src="assets/blender/school.png" alt="3D model of School next to Park" style="width: 58px; height: 58px;">
+              <div class="route-target-text">
+                <strong>Park (+7.5m, +10.5m)</strong>
+                <span>Walk north up Pine Street, turn right onto Oak Street, and walk past the school. The park is on your left.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="plate route-map-column">
+            <div class="route-toolbar">
+              <div class="route-controls">
+                <button type="button" class="chrome-btn chrome-btn-primary" id="route-play-8">
+                  <span data-icon="play" data-icon-class="icon-sm"></span>
+                  <span class="route-play-label">Play route</span>
+                </button>
+                <button type="button" class="chrome-btn" id="route-replay-8">
+                  <span data-icon="rotate-ccw" data-icon-class="icon-sm"></span>
+                  Replay
+                </button>
+                <button type="button" class="chrome-btn" id="route-next-step-8">
+                  <span data-icon="chevron-right" data-icon-class="icon-sm"></span>
+                  Next step
+                </button>
+              </div>
+              <span class="coord-line">Pine St (N) to Oak St (E)</span>
+            </div>
+            <div id="route-map-8" class="atlas-stage-box route-map-stage"></div>
+            <div class="step-badge-strip" id="route-steps-8"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 9: Key English Vocabulary & Prepositions -->
+      <section class="slide" data-slide="9" hidden aria-label="Slide 9: Key Vocabulary and Prepositions">
+        <div class="slide-header">
+          <div class="slide-heading-group">
+            <p class="slide-kicker">Language Review</p>
+            <h2 class="slide-title">Key Vocabulary and Wayfinding Chart</h2>
+          </div>
+          <span class="speaker-chip">
+            <span data-icon="volume-2" data-icon-class="icon-sm"></span>
+            Speaker: Anh Thi
+          </span>
+        </div>
+
+        <div class="vocab-layout">
+          <div class="plate vocab-panel">
+            <h3>Ten Neighbourhood Places</h3>
+            <div class="vocab-places-list" id="vocab-places-list"></div>
+          </div>
+
+          <div class="plate vocab-panel">
+            <h3>Six Prepositions and Four Direction Commands</h3>
+            <div class="prep-diagrams-grid" id="vocab-prep-diagrams"></div>
+            <div class="direction-strip" id="vocab-direction-strip"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 10: Teamwork & Contribution Ledger -->
+      <section class="slide" data-slide="10" hidden aria-label="Slide 10: Teamwork and Contribution Ledger">
+        <div class="slide-header">
+          <div class="slide-heading-group">
+            <p class="slide-kicker">Group Accountability</p>
+            <h2 class="slide-title">Teamwork and Member Contributions</h2>
+          </div>
+          <span class="speaker-chip">
+            <span data-icon="check-circle" data-icon-class="icon-sm"></span>
+            Leader Report: Gia Khanh
+          </span>
+        </div>
+
+        <div class="plate teamwork-wrap">
+          <div class="leader-banner">
+            <div>
+              <strong>Group Leader Summary (Gia Khanh):</strong> All six members contributed evenly to planning, vocabulary checking, 3D atlas building, and live English speaking turns.
+            </div>
+            <span class="atlas-tag">Submission Deadline: 29/11/2026</span>
+          </div>
+
+          <div class="ledger-table-wrap">
+            <table class="ledger-table">
+              <thead>
+                <tr>
+                  <th scope="col">Member</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">Assigned Tasks</th>
+                  <th scope="col">Speaking Turns</th>
+                  <th scope="col">Contribution</th>
+                </tr>
+              </thead>
+              <tbody id="teamwork-ledger-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 11: Conclusion & Favourite Place -->
+      <section class="slide" data-slide="11" hidden aria-label="Slide 11: Conclusion and Favourite Place">
+        <div class="slide-header">
+          <div class="slide-heading-group">
+            <p class="slide-kicker">Part 3: Conclusion</p>
+            <h2 class="slide-title">Our Favourite Place: Greenleaf Park</h2>
+          </div>
+          <span class="speaker-chip">
+            <span data-icon="trees" data-icon-class="icon-sm"></span>
+            Speakers: Tùng Lâm &amp; Tuấn Anh
+          </span>
+        </div>
+
+        <div class="conclusion-layout">
+          <div class="plate park-feature">
+            <div class="park-feature-well">
+              <img src="assets/blender/park.png" alt="3D architectural render of Greenleaf Park with trees, fountain, and wooden benches">
+            </div>
+            <div class="atlas-scale-footer">
+              <span>Park on Oak Street (+7.5m, +10.5m)</span>
+              <span>Next to School</span>
+            </div>
+          </div>
+
+          <div class="plate conclusion-copy">
+            <div>
+              <h3 style="margin: 0 0 10px; font-family: var(--font-display); font-size: 1.25rem;">Why our group loves Greenleaf Park</h3>
+              <ul class="summary-points">
+                <li>Greenleaf Neighbourhood brings together homes, learning, shopping, healthcare, and public transport on four clear streets.</li>
+                <li>Our favourite place is the <strong>park</strong> next to the school, where students can play sports, read English books, and relax with friends.</li>
+                <li>Clear street names and landmarks help visitors ask for and give accurate directions.</li>
+              </ul>
+            </div>
+
+            <blockquote class="quote-block">
+              "That is our neighbourhood map. We hope you like it. Thank you for listening!"
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 12: Thank You & Live Q&A Map Jump -->
+      <section class="slide" data-slide="12" hidden aria-label="Slide 12: Thank You and Live Q&A">
+        <div class="closing-layout">
+          <div class="plate closing-card">
+            <div>
+              <span class="atlas-tag">
+                <span data-icon="check-circle" data-icon-class="icon-sm"></span>
+                Presentation Complete
+              </span>
+              <h2 class="closing-h2" style="margin-top: 12px;">Thank You for Listening!</h2>
+              <p class="slide-lead" style="margin-top: 8px;">Ask our group how to get to any building in Greenleaf Neighbourhood and we will trace the route live on our interactive atlas.</p>
+            </div>
+
+            <div class="credits-grid" id="closing-credits" aria-label="Presentation credits"></div>
+
+            <div class="closing-cta-row">
+              <button type="button" class="chrome-btn chrome-btn-primary" id="jump-to-map-btn" data-jump-slide="3">
+                <span data-icon="map" data-icon-class="icon-sm"></span>
+                Jump to Interactive Map (Slide 3)
+              </button>
+              <button type="button" class="chrome-btn" data-jump-slide="1">
+                <span data-icon="rotate-ccw" data-icon-class="icon-sm"></span>
+                Return to Cover
+              </button>
+            </div>
+          </div>
+
+          <div class="plate cover-visual">
+            <div class="diorama-frame">
+              <img src="assets/blender/overview-diorama.png" alt="Full 3D overview diorama of Greenleaf Neighbourhood">
+            </div>
+            <div class="atlas-scale-footer">
+              <span>Group Greenleaf | Grade 6 English</span>
+              <span>Live Q&amp;A Ready</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="deck-dock">
+      <div class="dock-nav">
+        <button type="button" class="dock-btn" id="prev-slide-btn" aria-label="Previous slide">
+          <span data-icon="chevron-left"></span>
+          <span class="dock-btn-label">Previous</span>
+        </button>
+        <button type="button" class="dock-btn" id="next-slide-btn" aria-label="Next slide">
+          <span class="dock-btn-label">Next</span>
+          <span data-icon="chevron-right"></span>
+        </button>
+      </div>
+
+      <div class="dock-progress">
+        <div class="dot-strip" id="dot-strip" aria-label="Slide selector"></div>
+        <span class="slide-counter" id="slide-counter">01 / 12</span>
+      </div>
+
+      <span class="dock-hint">Keys: Left / Right / Space / G grid / N notes</span>
+    </footer>
+  </div>
+
+  <!-- Slide 4 Modal Lightbox (<dialog closedby="any">) -->
+  <dialog id="place-lightbox" closedby="any" aria-labelledby="lightbox-title">
+    <div class="dialog-frame">
+      <div class="dialog-head">
+        <h2 id="lightbox-title">Place Details</h2>
+        <button type="button" class="chrome-btn" id="lightbox-close-btn" commandfor="place-lightbox" command="close" aria-label="Close place preview">
+          <span data-icon="x" data-icon-class="icon-sm"></span>
+          Close
+        </button>
+      </div>
+      <div class="lightbox-body">
+        <div class="lightbox-well">
+          <img id="lightbox-img" src="assets/blender/my-house.png" alt="">
+        </div>
+        <div class="lightbox-info">
+          <span class="ipa-line" id="lightbox-ipa"></span>
+          <span class="coord-line" id="lightbox-street"></span>
+          <p class="inspector-sentence" id="lightbox-sentence"></p>
+          <p class="inspector-detail" id="lightbox-detail"></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Global Slide Grid Overview Modal (<dialog closedby="any">) -->
+  <dialog id="slide-overview-dialog" class="overview-dialog" closedby="any" aria-labelledby="overview-title">
+    <div class="dialog-frame">
+      <div class="dialog-head">
+        <h2 id="overview-title">Slide Overview (1 to 12)</h2>
+        <button type="button" class="chrome-btn" id="overview-close-btn" commandfor="slide-overview-dialog" command="close" aria-label="Close slide overview">
+          <span data-icon="x" data-icon-class="icon-sm"></span>
+          Close
+        </button>
+      </div>
+      <div class="overview-grid" id="overview-grid"></div>
+    </div>
+  </dialog>
+
+  <!-- Non-Modal Presenter Notes Drawer (<dialog popover="manual">) -->
+  <dialog id="presenter-notes" class="notes-popover" popover="manual" aria-labelledby="notes-title">
+    <div class="notes-frame">
+      <div class="dialog-head">
+        <h2 id="notes-title" style="font-size: 1.08rem;">Presenter Notes</h2>
+        <button type="button" class="chrome-btn" id="notes-close-btn" commandfor="presenter-notes" command="hide-popover" aria-label="Close presenter notes">
+          <span data-icon="x" data-icon-class="icon-sm"></span>
+          Close
+        </button>
+      </div>
+      <div class="notes-section">
+        <span class="notes-label" id="notes-slide-title">Slide 1</span>
+        <strong id="notes-speakers" style="font-size: 0.88rem;"></strong>
+      </div>
+      <div class="notes-section">
+        <span class="notes-label">English Spoken Script</span>
+        <p class="notes-script" id="notes-english-script"></p>
+      </div>
+      <div class="notes-section">
+        <span class="notes-label">Ghi chú phát âm và điều phối (Tiếng Việt)</span>
+        <p class="notes-vi" id="notes-vietnamese-tips"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/lucide.min.js"></script>
+  <script src="scripts/map-data.js"></script>
+  <script src="scripts/icons.js"></script>
+  <script src="scripts/atlas-svg.js"></script>
+  <script src="scripts/deck.js"></script>
+</body>
+</html>

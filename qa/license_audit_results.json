@@ -1,0 +1,435 @@
+{
+  "stage": "Stage B - Resource & License Audit",
+  "status": "PASS",
+  "failure_count": 0,
+  "failures": [],
+  "manifest_entries": 48,
+  "verified_local_files": 48,
+  "sprite_symbol_count": 37,
+  "sprite_symbols": [
+    "compass",
+    "map",
+    "map-pin",
+    "route",
+    "navigation",
+    "arrow-up",
+    "arrow-down",
+    "arrow-left",
+    "arrow-right",
+    "corner-up-left",
+    "corner-up-right",
+    "home",
+    "school",
+    "trees",
+    "store",
+    "shopping-cart",
+    "cross",
+    "hospital",
+    "utensils",
+    "mail",
+    "book-open",
+    "bus",
+    "users",
+    "message-circle",
+    "play",
+    "pause",
+    "rotate-ccw",
+    "chevron-left",
+    "chevron-right",
+    "grid",
+    "layout-grid",
+    "file-text",
+    "maximize-2",
+    "x",
+    "volume-2",
+    "check-circle",
+    "circle-check"
+  ],
+  "referenced_font_files_count": 40,
+  "records": [
+    {
+      "name": "GSAP 3.15.0 (gsap.min.js)",
+      "local_path": "vendor/gsap.min.js",
+      "size_bytes": 72927,
+      "sha256_match": true,
+      "license": "Webflow-GSAP",
+      "quote_words": 16
+    },
+    {
+      "name": "Lucide Icons 1.62.0 UMD (lucide.min.js)",
+      "local_path": "vendor/lucide.min.js",
+      "size_bytes": 458377,
+      "sha256_match": true,
+      "license": "ISC / MIT",
+      "quote_words": 19
+    },
+    {
+      "name": "Lucide 1.62.0 Offline SVG Symbol Sprite (37 icons)",
+      "local_path": "assets/icons/sprite.svg",
+      "size_bytes": 10752,
+      "sha256_match": true,
+      "license": "ISC / MIT",
+      "quote_words": 19
+    },
+    {
+      "name": "Poly Haven Kloofendal 48d Partly Cloudy (Pure Sky) 1K HDRI",
+      "local_path": "assets/cc0-sources/daylight_hdri.hdr",
+      "size_bytes": 1435119,
+      "sha256_match": true,
+      "license": "CC0-1.0",
+      "quote_words": 12
+    },
+    {
+      "name": "ambientCG Asphalt033 (1K JPG PBR)",
+      "local_path": "assets/cc0-sources/Asphalt033_1K-JPG/Asphalt033_1K-JPG.zip",
+      "size_bytes": 9722569,
+      "sha256_match": true,
+      "license": "CC0-1.0",
+      "quote_words": 13
+    },
+    {
+      "name": "ambientCG PavingStones152 (1K JPG PBR)",
+      "local_path": "assets/cc0-sources/PavingStones152_1K-JPG/PavingStones152_1K-JPG.zip",
+      "size_bytes": 8330306,
+      "sha256_match": true,
+      "license": "CC0-1.0",
+      "quote_words": 13
+    },
+    {
+      "name": "ambientCG Paper006 (1K JPG PBR)",
+      "local_path": "assets/cc0-sources/Paper006_1K-JPG/Paper006_1K-JPG.zip",
+      "size_bytes": 4754836,
+      "sha256_match": true,
+      "license": "CC0-1.0",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (italic, weight 400, vietnamese)",
+      "local_path": "vendor/fonts/be-vietnam-pro-italic-400-vietnamese.woff2",
+      "size_bytes": 11840,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (italic, weight 400, latin-ext)",
+      "local_path": "vendor/fonts/be-vietnam-pro-italic-400-latin-ext.woff2",
+      "size_bytes": 13120,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (italic, weight 400, latin)",
+      "local_path": "vendor/fonts/be-vietnam-pro-italic-400-latin.woff2",
+      "size_bytes": 21432,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (italic, weight 600, vietnamese)",
+      "local_path": "vendor/fonts/be-vietnam-pro-italic-600-vietnamese.woff2",
+      "size_bytes": 11788,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (italic, weight 600, latin-ext)",
+      "local_path": "vendor/fonts/be-vietnam-pro-italic-600-latin-ext.woff2",
+      "size_bytes": 13624,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (italic, weight 600, latin)",
+      "local_path": "vendor/fonts/be-vietnam-pro-italic-600-latin.woff2",
+      "size_bytes": 22464,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (italic, weight 700, vietnamese)",
+      "local_path": "vendor/fonts/be-vietnam-pro-italic-700-vietnamese.woff2",
+      "size_bytes": 12008,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (italic, weight 700, latin-ext)",
+      "local_path": "vendor/fonts/be-vietnam-pro-italic-700-latin-ext.woff2",
+      "size_bytes": 13760,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (italic, weight 700, latin)",
+      "local_path": "vendor/fonts/be-vietnam-pro-italic-700-latin.woff2",
+      "size_bytes": 22544,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 300, vietnamese)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-300-vietnamese.woff2",
+      "size_bytes": 12252,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 300, latin-ext)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-300-latin-ext.woff2",
+      "size_bytes": 13304,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 300, latin)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-300-latin.woff2",
+      "size_bytes": 21908,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 400, vietnamese)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-400-vietnamese.woff2",
+      "size_bytes": 11532,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 400, latin-ext)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-400-latin-ext.woff2",
+      "size_bytes": 13056,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 400, latin)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-400-latin.woff2",
+      "size_bytes": 21168,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 500, vietnamese)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-500-vietnamese.woff2",
+      "size_bytes": 12172,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 500, latin-ext)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-500-latin-ext.woff2",
+      "size_bytes": 13548,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 500, latin)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-500-latin.woff2",
+      "size_bytes": 21892,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 600, vietnamese)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-600-vietnamese.woff2",
+      "size_bytes": 12176,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 600, latin-ext)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-600-latin-ext.woff2",
+      "size_bytes": 13608,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 600, latin)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-600-latin.woff2",
+      "size_bytes": 22032,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 700, vietnamese)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-700-vietnamese.woff2",
+      "size_bytes": 12468,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 700, latin-ext)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-700-latin-ext.woff2",
+      "size_bytes": 13852,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 700, latin)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-700-latin.woff2",
+      "size_bytes": 22152,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 800, vietnamese)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-800-vietnamese.woff2",
+      "size_bytes": 12404,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 800, latin-ext)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-800-latin-ext.woff2",
+      "size_bytes": 13752,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Be Vietnam Pro (normal, weight 800, latin)",
+      "local_path": "vendor/fonts/be-vietnam-pro-normal-800-latin.woff2",
+      "size_bytes": 22320,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Bricolage Grotesque (normal, weight 200-800, vietnamese)",
+      "local_path": "vendor/fonts/bricolage-grotesque-normal-200-800-vietnamese.woff2",
+      "size_bytes": 22028,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Bricolage Grotesque (normal, weight 200-800, latin-ext)",
+      "local_path": "vendor/fonts/bricolage-grotesque-normal-200-800-latin-ext.woff2",
+      "size_bytes": 53588,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Bricolage Grotesque (normal, weight 200-800, latin)",
+      "local_path": "vendor/fonts/bricolage-grotesque-normal-200-800-latin.woff2",
+      "size_bytes": 131548,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Fraunces (italic, weight 300-700, vietnamese)",
+      "local_path": "vendor/fonts/fraunces-italic-300-700-vietnamese.woff2",
+      "size_bytes": 22128,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Fraunces (italic, weight 300-700, latin-ext)",
+      "local_path": "vendor/fonts/fraunces-italic-300-700-latin-ext.woff2",
+      "size_bytes": 71460,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Fraunces (italic, weight 300-700, latin)",
+      "local_path": "vendor/fonts/fraunces-italic-300-700-latin.woff2",
+      "size_bytes": 81520,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Fraunces (normal, weight 300-800, vietnamese)",
+      "local_path": "vendor/fonts/fraunces-normal-300-800-vietnamese.woff2",
+      "size_bytes": 19700,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Fraunces (normal, weight 300-800, latin-ext)",
+      "local_path": "vendor/fonts/fraunces-normal-300-800-latin-ext.woff2",
+      "size_bytes": 59388,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Fraunces (normal, weight 300-800, latin)",
+      "local_path": "vendor/fonts/fraunces-normal-300-800-latin.woff2",
+      "size_bytes": 67304,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Geist Mono (normal, weight 100-900, symbols2)",
+      "local_path": "vendor/fonts/geist-mono-normal-100-900-symbols2.woff2",
+      "size_bytes": 5812,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Geist Mono (normal, weight 100-900, vietnamese)",
+      "local_path": "vendor/fonts/geist-mono-normal-100-900-vietnamese.woff2",
+      "size_bytes": 7696,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Geist Mono (normal, weight 100-900, latin-ext)",
+      "local_path": "vendor/fonts/geist-mono-normal-100-900-latin-ext.woff2",
+      "size_bytes": 14696,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Geist Mono (normal, weight 100-900, latin)",
+      "local_path": "vendor/fonts/geist-mono-normal-100-900-latin.woff2",
+      "size_bytes": 23128,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    },
+    {
+      "name": "Offline @font-face Stylesheet (Bricolage Grotesque, Be Vietnam Pro, Fraunces, Geist Mono)",
+      "local_path": "vendor/fonts/fonts.css",
+      "size_bytes": 15788,
+      "sha256_match": true,
+      "license": "OFL-1.1",
+      "quote_words": 13
+    }
+  ]
+}

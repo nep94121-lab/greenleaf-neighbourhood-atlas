@@ -1,0 +1,45 @@
+:root {
+  /* Illustrated Atlas palette */
+  --bg-paper: #F6F4EE;
+  --bg-plate: #FFFFFF;
+  --bg-sand: #EFECE3;
+  --border-draft: #D8D3C8;
+  --border-strong: #B9B1A1;
+
+  --ink: #171C22;
+  --ink-slate: #4D5761;
+
+  --accent-pine: #1B6B4A;
+  --accent-pine-dark: #134F36;
+  --accent-pine-soft: #E3EFE9;
+
+  --accent-vermilion: #C84B31;
+  --accent-vermilion-soft: #F9E9E4;
+
+  /* Atlas map tints */
+  --map-park: #DCE8DF;
+  --map-park-stroke: #8AB398;
+  --map-road: #E4DFD3;
+  --map-sidewalk: #EDE9DE;
+  --map-water: #DCE7EE;
+  --map-lot: #FAF8F3;
+
+  /* Shadows calibrated to charcoal ink */
+  --shadow-plate: 0 2px 10px rgba(23, 28, 34, 0.06);
+  --shadow-elevated: 0 10px 28px rgba(23, 28, 34, 0.10);
+  --shadow-dialog: 0 20px 56px rgba(23, 28, 34, 0.22);
+
+  /* Typography */
+  --font-display: "Bricolage Grotesque", system-ui, -apple-system, sans-serif;
+  --font-body: "Be Vietnam Pro", system-ui, -apple-system, sans-serif;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Radii & layout */
+  --radius-plate: 14px;
+  --radius-well: 10px;
+  --radius-pill: 999px;
+
+  --topbar-h: 52px;
+  --dock-h: 56px;
+}
